@@ -1,6 +1,6 @@
 //
-//  OpenWeatherAPI_SwiftUIApp.swift
-//  OpenWeatherAPI_SwiftUI
+//  WeatherApp.swift
+//  WeatherWithSwiftUIExample
 //
 //  Created by Leo Ho on 2022/4/22.
 //
@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct OpenWeatherAPI_SwiftUIApp: App {
+struct WeatherApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WeatherView()
         }
     }
 }

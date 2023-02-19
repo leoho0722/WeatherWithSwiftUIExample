@@ -3,28 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D09BA73B281248B1007F7661 /* OpenWeatherAPI_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09BA73A281248B1007F7661 /* OpenWeatherAPI_SwiftUIApp.swift */; };
-		D09BA73D281248B1007F7661 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09BA73C281248B1007F7661 /* ContentView.swift */; };
+		D07BA532298699EB005C2D9E /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BA531298699EB005C2D9E /* NetworkConstants.swift */; };
+		D09BA73B281248B1007F7661 /* WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09BA73A281248B1007F7661 /* WeatherApp.swift */; };
+		D09BA73D281248B1007F7661 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09BA73C281248B1007F7661 /* WeatherView.swift */; };
 		D09BA73F281248B5007F7661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D09BA73E281248B5007F7661 /* Assets.xcassets */; };
 		D09BA742281248B5007F7661 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D09BA741281248B5007F7661 /* Preview Assets.xcassets */; };
 		D09BA74C28124914007F7661 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09BA74B28124914007F7661 /* WeatherData.swift */; };
-		D09BA74E28124969007F7661 /* WeatherAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09BA74D28124969007F7661 /* WeatherAPIService.swift */; };
-		D09BA750281249C4007F7661 /* WeatherAPIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09BA74F281249C4007F7661 /* WeatherAPIViewModel.swift */; };
+		D09BA74E28124969007F7661 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09BA74D28124969007F7661 /* NetworkManager.swift */; };
+		D09BA750281249C4007F7661 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09BA74F281249C4007F7661 /* WeatherViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D09BA737281248B1007F7661 /* OpenWeatherAPI_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenWeatherAPI_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D09BA73A281248B1007F7661 /* OpenWeatherAPI_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherAPI_SwiftUIApp.swift; sourceTree = "<group>"; };
-		D09BA73C281248B1007F7661 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D07BA531298699EB005C2D9E /* NetworkConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		D09BA737281248B1007F7661 /* WeatherWithSwiftUIExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherWithSwiftUIExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D09BA73A281248B1007F7661 /* WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApp.swift; sourceTree = "<group>"; };
+		D09BA73C281248B1007F7661 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		D09BA73E281248B5007F7661 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D09BA741281248B5007F7661 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D09BA74B28124914007F7661 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
-		D09BA74D28124969007F7661 /* WeatherAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIService.swift; sourceTree = "<group>"; };
-		D09BA74F281249C4007F7661 /* WeatherAPIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIViewModel.swift; sourceTree = "<group>"; };
+		D09BA74D28124969007F7661 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D09BA74F281249C4007F7661 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,10 +40,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D07BA530298699CF005C2D9E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D07BA531298699EB005C2D9E /* NetworkConstants.swift */,
+				D09BA74D28124969007F7661 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D07BA53329869FD3005C2D9E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D09BA73E281248B5007F7661 /* Assets.xcassets */,
+				D09BA740281248B5007F7661 /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		D09BA72E281248B1007F7661 = {
 			isa = PBXGroup;
 			children = (
-				D09BA739281248B1007F7661 /* OpenWeatherAPI_SwiftUI */,
+				D09BA739281248B1007F7661 /* WeatherWithSwiftUIExample */,
 				D09BA738281248B1007F7661 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,22 +69,21 @@
 		D09BA738281248B1007F7661 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D09BA737281248B1007F7661 /* OpenWeatherAPI_SwiftUI.app */,
+				D09BA737281248B1007F7661 /* WeatherWithSwiftUIExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D09BA739281248B1007F7661 /* OpenWeatherAPI_SwiftUI */ = {
+		D09BA739281248B1007F7661 /* WeatherWithSwiftUIExample */ = {
 			isa = PBXGroup;
 			children = (
+				D09BA73A281248B1007F7661 /* WeatherApp.swift */,
 				D09BA74A281248F4007F7661 /* Model */,
-				D09BA749281248ED007F7661 /* ViewModel */,
 				D09BA748281248DF007F7661 /* View */,
-				D09BA73A281248B1007F7661 /* OpenWeatherAPI_SwiftUIApp.swift */,
-				D09BA73E281248B5007F7661 /* Assets.xcassets */,
-				D09BA740281248B5007F7661 /* Preview Content */,
+				D09BA749281248ED007F7661 /* ViewModel */,
+				D07BA53329869FD3005C2D9E /* Resources */,
 			);
-			path = OpenWeatherAPI_SwiftUI;
+			path = WeatherWithSwiftUIExample;
 			sourceTree = "<group>";
 		};
 		D09BA740281248B5007F7661 /* Preview Content */ = {
@@ -78,7 +97,7 @@
 		D09BA748281248DF007F7661 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D09BA73C281248B1007F7661 /* ContentView.swift */,
+				D09BA73C281248B1007F7661 /* WeatherView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -86,7 +105,7 @@
 		D09BA749281248ED007F7661 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				D09BA74F281249C4007F7661 /* WeatherAPIViewModel.swift */,
+				D09BA74F281249C4007F7661 /* WeatherViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -95,7 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				D09BA74B28124914007F7661 /* WeatherData.swift */,
-				D09BA74D28124969007F7661 /* WeatherAPIService.swift */,
+				D07BA530298699CF005C2D9E /* Network */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -103,9 +122,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D09BA736281248B1007F7661 /* OpenWeatherAPI_SwiftUI */ = {
+		D09BA736281248B1007F7661 /* WeatherWithSwiftUIExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D09BA745281248B5007F7661 /* Build configuration list for PBXNativeTarget "OpenWeatherAPI_SwiftUI" */;
+			buildConfigurationList = D09BA745281248B5007F7661 /* Build configuration list for PBXNativeTarget "WeatherWithSwiftUIExample" */;
 			buildPhases = (
 				D09BA733281248B1007F7661 /* Sources */,
 				D09BA734281248B1007F7661 /* Frameworks */,
@@ -115,9 +134,9 @@
 			);
 			dependencies = (
 			);
-			name = OpenWeatherAPI_SwiftUI;
+			name = WeatherWithSwiftUIExample;
 			productName = OpenWeatherAPI_SwiftUI;
-			productReference = D09BA737281248B1007F7661 /* OpenWeatherAPI_SwiftUI.app */;
+			productReference = D09BA737281248B1007F7661 /* WeatherWithSwiftUIExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -136,8 +155,8 @@
 					};
 				};
 			};
-			buildConfigurationList = D09BA732281248B1007F7661 /* Build configuration list for PBXProject "OpenWeatherAPI_SwiftUI" */;
-			compatibilityVersion = "Xcode 12.0";
+			buildConfigurationList = D09BA732281248B1007F7661 /* Build configuration list for PBXProject "WeatherWithSwiftUIExample" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -149,7 +168,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D09BA736281248B1007F7661 /* OpenWeatherAPI_SwiftUI */,
+				D09BA736281248B1007F7661 /* WeatherWithSwiftUIExample */,
 			);
 		};
 /* End PBXProject section */
@@ -171,11 +190,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D09BA73D281248B1007F7661 /* ContentView.swift in Sources */,
-				D09BA750281249C4007F7661 /* WeatherAPIViewModel.swift in Sources */,
-				D09BA74E28124969007F7661 /* WeatherAPIService.swift in Sources */,
+				D07BA532298699EB005C2D9E /* NetworkConstants.swift in Sources */,
+				D09BA73D281248B1007F7661 /* WeatherView.swift in Sources */,
+				D09BA750281249C4007F7661 /* WeatherViewModel.swift in Sources */,
+				D09BA74E28124969007F7661 /* NetworkManager.swift in Sources */,
 				D09BA74C28124914007F7661 /* WeatherData.swift in Sources */,
-				D09BA73B281248B1007F7661 /* OpenWeatherAPI_SwiftUIApp.swift in Sources */,
+				D09BA73B281248B1007F7661 /* WeatherApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +325,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"OpenWeatherAPI_SwiftUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WeatherWithSwiftUIExample/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = S8FBP4YLUA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -314,13 +334,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.leoho.OpenWeatherAPI-SwiftUI";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leoho.openweatherapi.swiftui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -335,7 +355,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"OpenWeatherAPI_SwiftUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WeatherWithSwiftUIExample/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = S8FBP4YLUA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -344,13 +364,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.leoho.OpenWeatherAPI-SwiftUI";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leoho.openweatherapi.swiftui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -361,7 +381,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D09BA732281248B1007F7661 /* Build configuration list for PBXProject "OpenWeatherAPI_SwiftUI" */ = {
+		D09BA732281248B1007F7661 /* Build configuration list for PBXProject "WeatherWithSwiftUIExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D09BA743281248B5007F7661 /* Debug */,
@@ -370,7 +390,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D09BA745281248B5007F7661 /* Build configuration list for PBXNativeTarget "OpenWeatherAPI_SwiftUI" */ = {
+		D09BA745281248B5007F7661 /* Build configuration list for PBXNativeTarget "WeatherWithSwiftUIExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D09BA746281248B5007F7661 /* Debug */,
